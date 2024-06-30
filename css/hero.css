@@ -1,0 +1,153 @@
+.hero {
+  padding-top:146px ;
+  background-size: cover;
+  background-position: bottom;
+  background-image: url(../img/final-hero-1920.jpg);
+padding-bottom: 143px;
+}
+
+
+
+.hero__block {
+  max-width: 580px;
+}
+
+.hero__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 94%;
+  color: white;
+}
+
+.hero__descr {
+  margin: 0;
+  margin-bottom: 93px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 167%;
+  color: #fff;
+}
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  border-radius: 100px;
+  padding: 18px 33px;
+  background-color: #9d5cd0;
+ max-width: 320px;
+  font-weight: 700;
+  font-size: 18px;
+  border: 2px solid transparent;
+   transition: border 0.3s ease-in-out;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:focus-visible {
+  outline: 2px solid #c283f3;
+  outline-offset: 2px;
+}
+
+ .btn:hover{
+
+  outline: none;
+  border: 2px solid #d1a9f0;
+  border-radius: 100px;
+
+}
+
+.btn:active {
+
+  outline: none;
+  background-color: #7943a4;
+
+}
+
+
+@media(max-width: 1600px) {
+  .hero {
+    padding-top:100px;
+    background-image: url(../img/final-hero-1024.jpg);
+  padding-bottom: 100px;
+  }
+
+
+  .hero__block {
+    max-width: 659px;
+  }
+
+  .hero__descr {
+    margin-bottom: 134px;
+  }
+}
+
+@media(max-width: 1023px) {
+
+.hero {
+  padding-top: 84px;
+  background-image: url(../img/final-hero-768.jpg);
+ padding-bottom: 86px;
+}
+
+  .hero__block {
+    max-width: 620px;
+  }
+}
+
+@media(max-width: 615px) {
+  .hero {
+    background-image: url(../img/final-hero-320.jpg);
+  padding-top: 50px;
+    padding-bottom: 52px;
+  }
+
+  .hero__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+
+
+
+  .hero__block {
+    max-width: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+  }
+
+  .hero__title {
+    margin-bottom: 9px;
+    font-size: 32px;
+    line-height: 87%;
+    text-align: center
+  }
+
+  .hero__descr {
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 38px;
+    max-width: 264px;
+    line-height:17px;
+  }
+
+  .btn {
+    max-width:208px;
+    font-size: 12px;
+    border-radius: 100px;
+    padding: 0px 13px 2px 17px;
+  }
+}
+
+
+
+

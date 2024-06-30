@@ -1,0 +1,229 @@
+.gallery {
+  background-size: cover;
+  background-position: center;
+  background-image: url(../img/galleru1920.jpg);
+padding-top: 90px;
+  padding-bottom:78px;
+}
+
+
+.gallery__container {
+  padding: 0 50px 0 50px;
+}
+
+.gallery__title {
+  margin-bottom: 38px;
+  color: #fff;
+}
+
+.gallery__wrapper {
+  display: flex;
+
+}
+
+
+.gallery__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+}
+
+.gallery__checkbox {
+  user-select: none;
+  cursor: pointer;
+
+}
+
+
+
+.gallery__checkbox-input {
+  position: absolute;
+  appearance: none;
+
+}
+
+
+
+.gallery__checkbox-text {
+  display: inline-block;
+  margin-bottom: 4px;
+  position: relative;
+  padding-left: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #fff;
+
+}
+
+.gallery__checkbox-text::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #fff;
+  transform: translateY(-50%);
+  transition:border-color 0.3s ease-in-out ;
+
+}
+
+.gallery__checkbox-text::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #fff;
+  background-image: url(/18_work/img/gallery-krug.svg);
+  background-position: center;
+  background-size: 40%;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.3s;
+
+}
+
+.gallery__checkbox-input:checked + .gallery__checkbox-text::after {
+  opacity: 1;
+
+}
+
+.gallery__checkbox-input:focus + .gallery__checkbox-text {
+  color: #c283f3;
+
+}
+.gallery__checkbox-input:focus + .gallery__checkbox-text::before {
+  border-color: #c283f3;
+}
+
+
+
+.gallery__checkbox-text:active::before {
+  border-color: #c283f3;
+
+
+}
+
+.gallery__checkbox-text:hover::before {
+  border-color: #c283f3;
+
+}
+
+.gallery__checkbox-input:active+.gallery__checkbox-text {
+  color: #c283f3;
+
+
+}
+
+.gallery__menu {
+  width: calc(1150 / 1600 * 100%);
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: flex-end;
+  margin-left: auto;
+  flex-wrap: wrap;
+}
+.gallery__item {
+  width: calc(100% / 3 - 100px / 3);
+}
+.gallery__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+@media(max-width: 1600px) {
+  .gallery {
+    padding-top: 95px;
+    padding-bottom:78px
+  }
+
+  .gallery__wrapper {
+    display: block;
+  }
+
+
+  .gallery__menu {
+    width: 100%;
+  }
+
+
+
+  .gallery__title {
+    margin-bottom: 34px;
+  }
+
+
+  .gallery__container {
+    padding: 0 48px 0 50px;
+  }
+
+  .gallery__checkbox-text {
+    margin-bottom: 0;
+  }
+
+
+
+
+  .gallery__box {
+    margin-bottom: 30px;
+  }
+
+  .gallery__checkbox-text {
+    padding-left: 24px;
+  }
+
+}
+
+@media(max-width: 1023px) {
+  .gallery {
+    padding-top: 95px ;
+padding-bottom:80px;
+  }
+  .gallery__menu {
+    gap: 32px;
+  }
+  .gallery__item {
+    width: calc(100% / 3 - 64px / 3);
+  }
+
+}
+
+@media(max-width:615px) {
+
+  .gallery {
+    padding-top: 51px;
+    padding-bottom: 50px;
+  }
+  .gallery__container {
+    padding: 0 16px 0px 15px;
+  }
+
+  .gallery__title {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+
+
+  .gallery__menu {
+
+    flex-direction: column;
+    gap: 32px;
+
+  }
+
+  .gallery__item {
+    width: 100%;
+
+  }
+
+
+}

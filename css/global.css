@@ -1,0 +1,66 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  min-width: 310px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 200%;
+}
+
+.container {
+  max-width: 1700px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: none;
+}
+
+.reset-btn {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 48px;
+  color: #333;
+}
+
+.descr {
+
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #333;
+}
+
